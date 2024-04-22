@@ -1,9 +1,4 @@
 import { Component } from '@angular/core';
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { environment } from 'src/environments/environment.prod';
-
-const FIREBASE_CONFIG = environment.firebaseConfig;
 
 @Component({
   selector: 'app-home',
@@ -11,13 +6,6 @@ const FIREBASE_CONFIG = environment.firebaseConfig;
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
   constructor() {
-    const app = initializeApp(FIREBASE_CONFIG);
-
-    const fire = getFirestore(app);
-
-
   }
-
 }

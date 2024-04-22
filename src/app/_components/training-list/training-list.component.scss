@@ -5,7 +5,6 @@
         display: flex;
         list-style: none;
         overflow-x: scroll;
-        // scroll-snap-type: x mandatory;
         width: 100%;
         overflow: scroll;
         white-space: nowrap;
@@ -74,13 +73,7 @@
             }
             &.bg-01 {
                 background-image: url("../../../assets/imgs/training-02.jpg");
-            }
-            &.bg-02 {
-                background-image: url("../../../assets/imgs/training-03.jpg");
-            }
-            &.bg-03 {
-                background-image: url("../../../assets/imgs/training-04.jpg");
-            }
+            }           
         }
     }
 }

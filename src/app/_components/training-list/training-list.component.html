@@ -20,27 +20,16 @@
 
     </div>
 
-    <div class="item bg-02">
+    <div class="item bg-02" *ngFor="let item of list_training?.data" [ngStyle]="{'background-image': 'url('+item?.img+')'}">
 
-      <div class="inside-card card-list">
+      <div class="inside-card card-list" >
 
-        <ion-text>yoga experience </ion-text>
-
-
-      </div>
-
-    </div>  
-
-    <div class="item bg-03">
-
-      <div class="inside-card card-list">
-
-        <ion-text>levantamento de peso </ion-text>
+        <ion-text>{{item?.title}} </ion-text>
 
       </div>
 
     </div>  
-
+    
   </div>
 
 </div>

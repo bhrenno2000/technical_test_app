@@ -16,7 +16,7 @@
 
   </div>
 
-  <div class="details-user">
+  <div class="details-user" *ngIf="(content.userData | async) as user">
 
     <div class="div-img-user">
 
@@ -26,9 +26,9 @@
 
     <div class="info-user">
 
-      <ion-text class="name">Leonardo Santos</ion-text>
+      <ion-text class="name">{{user?.full_name}}</ion-text>
 
-      <ion-text class="level">Nível Roxo</ion-text>
+      <ion-text class="level">Nível {{user?.level}}</ion-text>
 
     </div>
 
