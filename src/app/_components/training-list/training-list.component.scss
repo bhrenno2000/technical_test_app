@@ -1,0 +1,86 @@
+.content-list {
+    width: 100%;
+    .list {
+        padding: 0px 23px;
+        display: flex;
+        list-style: none;
+        overflow-x: scroll;
+        // scroll-snap-type: x mandatory;
+        width: 100%;
+        overflow: scroll;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .item {
+            margin-right: 20px;
+            width: 220px;
+            flex: 0 0 220px;
+            border-radius: 15px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            scroll-snap-align: start;
+            transition: all 0.2s;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: gray;
+            .inside-card {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &.card-new {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    background: rgba(0, 0, 0, 0.574);
+                    height: 100%;
+                    border-radius: 15px;
+                    ion-text {
+                        line-height: 20px;
+                        color: white;
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                    }
+                    ion-icon {
+                        color: white;
+                        font-size: 2.3rem;
+                    }
+                    .text-card {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                &.card-list {
+                    display: flex;
+                    background: rgba(0, 0, 0, 0.574);
+                    border-radius: 15px;
+                    align-items: flex-end;
+                    height: 100%;
+                    ion-text {
+                        line-height: 20px;
+                        color: white;
+                        font-size: 1.2rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        padding: 20px;
+                    }
+                }
+            }
+            &.bg-01 {
+                background-image: url("../../../assets/imgs/training-02.jpg");
+            }
+            &.bg-02 {
+                background-image: url("../../../assets/imgs/training-03.jpg");
+            }
+            &.bg-03 {
+                background-image: url("../../../assets/imgs/training-04.jpg");
+            }
+        }
+    }
+}
