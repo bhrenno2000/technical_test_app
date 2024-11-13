@@ -1,9 +1,14 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'technical_test_app',
-  webDir: 'www'
+  appId: 'aquivoceavalia.com',
+  appName: 'AquiVoceAvalia',
+  webDir: 'www',
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 3000,
+    }
+  },
 };
 
 export default config;

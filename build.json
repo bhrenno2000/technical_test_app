@@ -1,0 +1,11 @@
+{
+    "android": {
+        "release": {
+            "keystore": "aquivoceavalia.keystore",
+            "alias": "aquivoceavalia",
+            "storePassword": "aquivoceavalia.com",
+            "password": "aquivoceavalia.com",
+            "keystoreType": ""
+        }
+    }
+}

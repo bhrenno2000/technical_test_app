@@ -4,10 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { HomePage } from './home.page';
 
-import { ContentListComponent } from '../_components/content-list/content-list.component';
-import { HeaderComponent } from '../_components/header/header.component';
-import { ProgramsListComponent } from '../_components/programs-list/programs-list.component';
-import { TrainingListComponent } from '../_components/training-list/training-list.component';
+import { FormatNamePipe } from '../format-name.pipe';
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -17,13 +14,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
+    FormatNamePipe
 
   ],
-  declarations: [HomePage,
-    HeaderComponent,
-    ContentListComponent,
-    ProgramsListComponent,
-    TrainingListComponent
+  declarations: [HomePage 
   ]
 })
 export class HomePageModule { }

@@ -1,51 +1,75 @@
-ion-toolbar {
-  --background: var(--ion-header-color);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 ion-header {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+    ion-toolbar {
+        --background: #19bcc0;
+        position: relative;
+        .inside {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 10px 10px 10px;
+            .logo {
+                width: 180px;
+            }
+        }
+    }
 }
 
 ion-content {
-  --background: var(--ion-body-color);
-  --offset-bottom: auto!important;
-  --overflow: hidden;
-  overflow: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+    --background: #139999;
+    --padding-bottom: 50px;
+    .title {
+        font-weight: 700;
+        font-size: 35px;
+        color: white;
+        padding: 30px 20px 5px 20px;
+        letter-spacing: 0px;
+    }
+    .sub {
+        font-weight: 600;
+        font-size: 13px;
+        color: white;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .list-cities {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        .citie {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            margin-bottom: 5px;
+            padding: 20px 20px;
+            font-size: 24px;
+            color: white;
+            letter-spacing: 0px;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background-image: linear-gradient(180deg, #f7901f 0%, #f04b27 100%);
+            ion-icon {
+                margin-right: 5px;
+                font-size: 2.2rem;
+                flex-shrink: 0;
+            }
+            &:active{
+                transform: translateY(2px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
 }
 
-.title-list {
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 20px 23px 10px 23px;
-  text-transform: uppercase;
-  ion-icon {
-    margin-left: 5px;
-    margin-top: 3px;
-    color: var(--ion-color-primary);
-  }
-  .badge-personal {
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
+.custom-footer {
+    background: #19bcc0;
+    padding: 30px 0px 40px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--ion-color-primary);
-
-    ion-text {
-      padding: 0px 3px;
-      color: white;
-      font-size: 0.7rem;
-      font-weight: 500;
-      margin-bottom: 2px;
-    }
-  }
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
 }

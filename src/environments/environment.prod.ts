@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
   firebaseConfig: {
-    apiKey: "AIzaSyABOkeR3fjeQJWLL7y-H4BZT_V3TfDVwmQ",
-    authDomain: "projeto-teste-usina.firebaseapp.com",
-    projectId: "projeto-teste-usina",
-    storageBucket: "projeto-teste-usina.appspot.com",
-    messagingSenderId: "497390811060",
-    appId: "1:497390811060:web:2571f8978f6cdf399564e1",
-    measurementId: "G-L5XHLMNE2T"
-  }
+    apiKey: "AIzaSyD_mxwwluDjdMGZSvyeK1dcwn8SxW8SE2A",
+    authDomain: "aquivoceavalia-69112.firebaseapp.com",
+    projectId: "aquivoceavalia-69112",
+    storageBucket: "aquivoceavalia-69112.appspot.com",
+    messagingSenderId: "37189337955",
+    appId: "1:37189337955:web:2dd3cdc6018fc01e6c0956",
+    measurementId: "G-NP5Q6J0DNH"
+}
 };
